@@ -1,0 +1,398 @@
+#Titulo{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #fda61a;
+}
+
+/*||||||||||||||||||||||||||||||||||||     NAVEGACION     ||||||||||||||||||||||||||||||||||||||||*/
+
+.nav {
+background-color: #fdb62c;
+list-style: none;
+margin: 0;
+padding: 0;
+position: sticky;
+}
+
+.nav-item {
+display: inline-block;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 1.25vw;
+}
+
+.nav-item a {
+color: #1c1c1c;
+display: block;
+padding: 1.389em;
+text-decoration: none;
+}
+
+.nav-item:hover {
+background-color: #e8b857;
+}
+
+.nav-item:focus {
+outline: none;
+background-color: #e8b857;
+color: #e8b857;
+}
+
+u {
+color: rgb(14, 14, 14);
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1.25vw;
+}
+
+/*||||||||||||||||||||||||||||||||||||||||||| Body ||||||||||||||||||||||||||||||||||||||||||||||*/
+
+body {
+background-color: #2e2e2e;
+font-size: 1vw;
+margin: 0;
+padding: 0;
+}
+
+/*||||||||||||||||||||||||||||||||||   NUESTROS PRODUCTOS   ||||||||||||||||||||||||||||||||||||||*/
+
+.mision,
+.vision,
+.nuestros-productos {
+background-color: #fec53e;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 1.25vw;
+padding: 1.736vw;
+border-radius: 1.65em;
+margin-left: 4em;
+margin-right: 4em;
+}
+
+.mision h2,
+.vision h2,
+.nuestros-productos h2 {
+font-size: 1.563vw;
+font-weight: bold;
+margin-bottom: 0.694vw;
+}
+
+/*||||||||||||||||||||||||||||||||||||   GRID PRODUCTOS   ||||||||||||||||||||||||||||||||||||||||*/
+
+.productos {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 1.042vw;
+margin: 3%;
+}
+
+.producto {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 1.042vw;
+background-color: #ffffff;
+border: 0.01vw solid #eaeaea;
+}
+
+.producto img {
+max-width: 100%;
+}
+
+.producto-titulo {
+font-weight: bold;
+margin: 0.347vw 0;
+}
+
+.producto-precio {
+font-weight: bold;
+margin: 0.347vw 0;
+color: #fdb62c;
+}
+
+.login {
+margin-top: 3.125vw;
+margin-bottom: 3.125vw;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 73vh;
+}
+
+.Registro {
+margin-top: 3.125vw;
+margin-bottom: 3.125vw;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+/*||||||||||||||||||||||||||||||||||||||   FORMS   ||||||||||||||||||||||||||||||||||||||||||*/
+
+.form {
+background-color: white;
+width: 80%;
+border-radius: 0.833vw;
+padding: 2.778vw 5.556vw;
+box-shadow: 0 0.416vw 1.042vw rgba(92, 99, 105, 0.2);
+}
+
+.title {
+font-size: 3.472vw;
+margin-bottom: 3.472vw;
+}
+
+.inputContainer {
+position: relative;
+height: 3.125vw;
+width: 90%;
+margin-bottom: 1.458vw;
+}
+
+.input {
+position: absolute;
+top: 0px;
+left: 0px;
+height: 100%;
+width: 100%;
+border: 1px solid #DADCE0;
+border-radius: 0.8em;
+font-size: 1em;
+padding: 0 1em;
+outline: none;
+background: none;
+z-index: 1;
+}
+::placeholder {
+color: transparent;
+}
+
+.hidden {
+  display: none;
+}
+    
+.label {
+position: absolute;
+top: 1.3em;
+left: 1.3em;
+padding: 0 0.3em;
+background-color: white;
+color: #DADCE0;
+font-size: 1em;
+transition: 0.5s;
+z-index: 0;
+}
+    
+/*||||||||||||||||||||||||||||||||||||||   MAPA   ||||||||||||||||||||||||||||||||||||||||||*/
+.mapa{
+display: flex;
+justify-content: center;
+}
+
+.mapa iframe {
+border: 0.5em solid #fda61a;
+border-radius: 0.8em;
+width: 60%;
+height: 37em;
+}
+
+/*||||||||||||||||||||||||||||||||||||||   Tabla admin   ||||||||||||||||||||||||||||||||||||||||||*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif; /* Fuente alternativa */
+}
+
+table th, table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd; /* Borde derecho */
+}
+
+table th {
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd; /* Borde superior de categorías */
+}
+
+table tr:last-child td {
+  border-bottom: none; /* Quitar borde inferior de última fila */
+}
+
+table tr:hover {
+  background-color: #f9f9f9;
+}
+
+table td a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #337ab7;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+table td a:hover {
+  background-color: #23527c;
+}
+  
+  .accion {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.producto-detalles {
+  background-color: #333;
+  padding: 20px;
+}
+
+.producto {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.producto-titulo {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.producto-precio {
+  font-size: 16px;
+  color: #f90;
+}
+
+/* Estilos generales */
+.producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.producto img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.producto-titulo {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.producto-autor,
+.producto-editorial,
+.producto-genero,
+.producto-precio,
+.producto-paginas,
+.producto-isbn,
+.producto-fecha {
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.cantidad {
+  margin-top: 10px;
+}
+
+.cantidad label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.cantidad input {
+  width: 50px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.agregar-carrito {
+  background-color: orange;
+  color: gray;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.agregar-carrito:hover {
+  background-color: darkorange;
+}
+
+
+/*||||||||||||||||||||||||||||||||||||||   FOOTER   ||||||||||||||||||||||||||||||||||||||||||*/
+
+.footer {
+bottom: 0;
+position: sticky;
+background-color: #2e2e2e;
+color: #fda61a;
+padding: 0;
+margin: 0;
+font-size: 0.8em;
+text-align: center;
+}
+
+.footer-content {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.footer-text {
+margin-bottom: 0.5em;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 1vw;
+}
+
+.redes-sociales {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+}
+    
+.redes-sociales-item {
+margin: 0 0.5em;
+font-size: 1vw;
+margin-bottom: 3%;
+padding-top: auto;
+padding-bottom: auto;
+display: flex;
+align-items: center;
+}
+
+.redes-sociales-item a {
+color: #bf3fd0;
+}
+
+.redes-sociales-item a:hover {
+color: #e4d8d8;
+}
+
+.redes-sociales img {
+border-radius: 50%;
+width: 2.5em;
+height: 2.5em;
+margin-right: 1em;
+}
